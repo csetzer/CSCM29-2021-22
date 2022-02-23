@@ -74,6 +74,7 @@ public class UserAmount {
 
     public UserAmount(InputList inputList) {
 	this.userAmountBase = new Hashtable<PublicKey, Integer>();
+	publicKeyList = new ArrayList<PublicKey>();	
 	for (Input  input : inputList.toList()){
 	    this.addBalance(input.getSender(),input.getAmount());
 	};
