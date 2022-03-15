@@ -5,13 +5,13 @@ contract Election {
 
     address administrator;
 
-    // This declares a state variable that
+    // numberVotes is a state variable that
     // stores for each address the number of votes it has left
     //   after modifications due to delegation, votes granted and
     //   after subtracting votes the address has used for voting
     mapping (address => uint) public numberVotes;
 
-    // This defines a state variable determining the number of votes
+    // votesReceived is a state variable determining the number of votes
     //    received by each candidate.
     // It will initialised by the constructor to an array of length 
     //    number of candidates

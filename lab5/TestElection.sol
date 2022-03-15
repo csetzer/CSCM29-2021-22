@@ -14,8 +14,7 @@ contract TestElection {
     // Each Voter will serve as a voter in the election
     Voter [] voter;
 
-
-    // Create an element of Election for _numCandidates many candidates.
+    // createTestElection creates an element of Election for _numCandidates many candidates.
     // The election element (or its address) is the administrator of the election
     // Then createTestElection creates _numVotes many voters
     // and gives each of them one vote.
@@ -75,6 +74,8 @@ contract TestElection {
 
     // Event for displaying a string descripton for a number, and the number
     event message(string _info,uint _number);
+
+    // Event for describing an action given as a string
     event actionDescription(string action);
 
     // Task 5.6
